@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png" 
+            alt="steam" width="157px" height="36px">
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100011289696318">Contact</a></li>
+                <li>
+                    <a href="">More</a>
+                    <ul class="supnav">
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="slider">
+                <div id="input-div">
+                    <input type="text" id="input">
+                    <button id="search" onclick="renderSearchGames()">🍭</button>
+                </div>
+                <div id="btn-div">
+                    <button class="btn" onclick="renderGenresGames('action')">Action</button>
+                    <button class="btn" onclick="renderGenresGames('casual')">Casual</button>
+                    <button class="btn" onclick="renderGenresGames('free to play')">Free to play</button>
+                    <button class="btn" onclick="renderGenresGames('strategy')">Strategy</button>
+                    <button class="btn" onclick="renderGenresGames('rpg')">RPG</button>
+                    <button class="btn" onclick="renderGenresGames('adventure')">Adventure</button>
+                    <button class="btn" onclick="renderGenresGames('indie')">Indie</button>
+                </div>
+            </div>
+    
+            <div id="content">
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

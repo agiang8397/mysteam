@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #34495e;
+    font-size: 2vw;
+}
+#header {
+    display: flex;
+    height: 60px;
+    background-color: #8e44ad;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+#nav > li {
+     display: inline-block; 
+     position: relative;
+       
+}
+.supnav {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 10px;
+    top: 100%;
+    width: 76.5px;
+
+}
+#nav li a{
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    display: inline-block
+}
+#nav >li:hover> a {
+    color: #34495e;
+    background-color: #9b59b6;
+
+}
+#nav li:hover .supnav {
+    display: block;
+  
+}
+#nav .supnav a {
+    color: #000;
+    line-height: 24px;
+    padding: 0 10px;
+
+}
+.supnav li:hover  {
+    background-color: #ecf0f1;
+}
+#container {
+    display: flex;
+    position: relative;
+    top: 60px
+}
+#slider {
+    width: 20%;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    position: fixed;
+}
+#content {
+    width: 80%;
+    padding: 20px;
+    position: relative;
+    left: 20%;
+   
+}
+#input-div {
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7f8c8d ;
+    border-radius: 6px;
+}
+#input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+    color: #e67e22;
+   
+}
+#search {
+    background-color: #e67e22;
+}
+#btn-div {
+    display: flex;
+    flex-direction: column;
+}
+#btn-div .btn {
+    padding: 5px;
+    background-color: #95a5a6;
+    color: #ecf0f1;
+    font-size: 1vw;
+}
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#content .box-game {
+    width: 20%;
+    height: 25vh;
+    margin: 5px;
+}
+#content .box-game .div-img {
+    width: 100%;
+    height: 70%;
+}
+#content .box-game img {
+    width: 100%;
+    height: 100%;
+}
+#content .box-game .div-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #341f97;
+    color: #ecf0f1;
+    height: 30%;
+    font-size: 1vw;
+    padding: 2px;
+}
+#img-detail {
+    width: 70%;
+    margin: auto;
+    
+}
+#descript {
+    text-align: justify;
+    color: antiquewhite;
+}
+#descript::first-letter {
+    font-size: 200%;
+    color: #12768f;
+}
+.para {
+    width: 100%;
+    color: red;
+}
