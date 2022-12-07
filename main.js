@@ -31,11 +31,12 @@ const getDetail = async (appid) => {
 const renderAllGames = async () => {
   try {
     const games = await getAllGames();
-    games.forEach(async (game) => {
+    games.forEach((game) => {
       const box = document.createElement("div");
       box.className = "box-game";
       box.addEventListener("click", async () => {
         const datas = await getDetail(game.appid);
+
         console.log(datas);
         content.innerHTML = `<img src="${game["header_image"]}" id='img-detail' alt=""><p id='descript'>${datas.description}</p>
                                     <p class='para'>Price: $${datas.price}</p>
@@ -103,7 +104,7 @@ const renderSearchGames = async () => {
   try {
     content.innerHTML = "";
     const games = await getSearchGames();
-    games.forEach(async (game) => {
+    games.forEach((game) => {
       const box = document.createElement("div");
       box.className = "box-game";
       box.addEventListener("click", async () => {
